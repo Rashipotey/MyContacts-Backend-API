@@ -3,16 +3,6 @@
 ## Overview
 The `mycontacts-backend-api` is a Node.js Express-based RESTful API for managing contacts. It includes user authentication, JWT token-based authorization, and full CRUD operations for contact management. Users can register, log in, and manage their contacts through protected routes.
 
-## Table of Contents
-1. [Project Introduction & Setup](#project-introduction--setup)
-2. [Installation](#installation)
-3. [API Routes](#api-routes)
-4. [User Authentication](#user-authentication)
-5. [Error Handling](#error-handling)
-6. [Database Setup](#database-setup)
-7. [Contributing](#contributing)
-8. [License](#license)
-
 ## Project Introduction & Setup
 This API serves as the backend for a contact management application where users can:
 - Register and log in
@@ -25,10 +15,7 @@ The API follows REST conventions and uses MongoDB for data storage.
 1. **Create an Express Server**
    The project begins by setting up an Express server to handle HTTP requests.
    
-2. **Thunder Client Setup**
-   Thunder Client is used for testing API requests directly within Visual Studio Code.
-
-3. **Contacts CRUD Routes**
+2. **Contacts CRUD Routes**
    The API has routes for creating, reading, updating, and deleting contacts, ensuring users can fully manage their contact information.
 
 ## Installation
@@ -41,17 +28,14 @@ The API follows REST conventions and uses MongoDB for data storage.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/mycontacts-backend-api.git
+   git clone https://github.com/Rashipotey/mycontacts-backend-api.git
    cd mycontacts-backend-api
 
-Install dependencies:
-bash
-Copy
-Edit
+# Install dependencies:
 npm install
 Create a .env file in the root directory and add your environment variables:
 
-API Routes
+# API Routes
 User Routes
 POST /api/users/register - Register a new user
 
@@ -74,8 +58,11 @@ User Authentication
 User Registration
 User Login
 
-Protecting Routes
+# Protecting Routes
 Routes that require authentication (such as contacts management) are protected by JWT tokens. A middleware verifies the JWT on each request, ensuring only logged-in users can access these routes.
 
-Mongoose Schemas
+# Mongoose Schemas
 User Schema: Stores user information including email, password (hashed), and JWT authentication.
+
+# Work Flow 
+![API Workflow](./assets/flow%20diagram.png)
