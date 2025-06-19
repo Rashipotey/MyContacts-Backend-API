@@ -8,6 +8,7 @@ This API serves as the backend for a contact management application where users 
 - Register and log in
 - Manage (create, read, update, delete) their contacts
 - Secure routes with JWT authentication
+- Use Postman or browser to test the api.
 
 The API follows REST conventions and uses MongoDB for data storage.
 
